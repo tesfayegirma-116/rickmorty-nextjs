@@ -46,6 +46,7 @@ export default function Rick() {
           ))
         )}
       </div>
+      <Pagination page={page} setPage={setPage} totalPages={totalPages} />
     </>
   );
 }
@@ -60,7 +61,9 @@ export function Pagination({ page, setPage, totalPages }: any) {
       >
         <BsFillCaretLeftFill />
       </button>
-      <span className="text-2xl font-bold text-white">{page} of {totalPages}</span>
+      <span className="text-2xl font-bold text-white">
+        {page} of {totalPages}
+      </span>
       <button
         className="flex items-center justify-center w-10 h-10 text-white bg-[#3c3e44] rounded-full hover:bg-[#272b33]"
         onClick={() => setPage(page + 1)}
