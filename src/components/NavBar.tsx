@@ -4,7 +4,7 @@ import { FaGithubAlt } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between bg-gray-100 p-4 shadow-lg">
+    <div className="flex justify-between bg-gray-50 p-4 shadow-lg">
       <div className="flex space-x-4">
         <div className="flex items-center">
           <Image
